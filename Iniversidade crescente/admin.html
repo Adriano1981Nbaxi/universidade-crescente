@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administração | Universidade Crescente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="admin-page">
+    <header class="admin-header">
+      <div class="container admin-topbar">
+        <div class="brand-wrap">
+          <img
+            class="brand-logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2F87Zwjn7TJ3NVE-rUIoHO9vhzON_D3fx4YVmrLPmUOAvu31SydHjOck&s=10"
+            alt="Logo da Universidade Crescente"
+          />
+          <div>
+            <p class="brand-name">Universidade Crescente</p>
+            <span class="brand-sub">Painel administrativo</span>
+          </div>
+        </div>
+        <a href="index.html" class="btn btn-light">Voltar ao site</a>
+      </div>
+    </header>
+
+    <main class="container admin-shell">
+      <aside class="admin-sidebar">
+        <h3>Dashboard</h3>
+        <ul>
+          <li>Notícias</li>
+          <li>Eventos</li>
+          <li>Estudantes</li>
+          <li>Configuração</li>
+        </ul>
+      </aside>
+
+      <section class="admin-content">
+        <div class="panel">
+          <h2>Nova publicação</h2>
+          <form id="news-form" class="admin-form">
+            <div class="field-row">
+              <div class="field">
+                <label>Título</label>
+                <input type="text" id="news-title" placeholder="Ex.: Abertura de matrículas 2026" />
+              </div>
+              <div class="field">
+                <label>Categoria</label>
+                <select id="news-category">
+                  <option>Académica</option>
+                  <option>Eventos</option>
+                  <option>Comunicado</option>
+                  <option>Estudantil</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Descrição curta</label>
+              <input type="text" id="news-summary" placeholder="Resumo da notícia" />
+            </div>
+
+            <div class="field">
+              <label>Conteúdo completo</label>
+              <textarea id="news-content" rows="5" placeholder="Detalhes da publicação"></textarea>
+            </div>
+
+            <div class="social-toggle">
+              <label><input type="checkbox" checked /> Facebook</label>
+              <label><input type="checkbox" checked /> Instagram</label>
+              <label><input type="checkbox" checked /> WhatsApp</label>
+              <label><input type="checkbox" /> LinkedIn</label>
+            </div>
+
+            <div class="button-row">
+              <button type="submit" class="btn btn-primary">Publicar</button>
+              <button type="button" class="btn btn-secondary">Pré-visualizar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="panel">
+          <h2>Gerir cursos</h2>
+          <form id="course-form" class="admin-form">
+            <div class="field-row">
+              <div class="field">
+                <label>Ícone</label>
+                <input type="text" id="course-icon" placeholder="Ex.: 💻" />
+              </div>
+              <div class="field">
+                <label>Nome do curso</label>
+                <input type="text" id="course-name" placeholder="Ex.: Psicologia e Desenvolvimento Humano" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Descrição</label>
+              <input type="text" id="course-description" placeholder="Descreve o curso disponível" />
+            </div>
+
+            <div class="button-row">
+              <button type="submit" class="btn btn-primary">Adicionar curso</button>
+              <button type="button" class="btn btn-secondary">Cancelar</button>
+            </div>
+          </form>
+          <div id="course-manager-list" class="course-manager-list"></div>
+        </div>
+
+        <div class="panel social-panel">
+          <div class="social-head">
+            <h3>Sincronização social</h3>
+            <span class="status-pill">Ativa</span>
+          </div>
+          <div id="social-queue" class="social-queue">Nenhuma publicação sincronizada ainda.</div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/admin.js"></script>
+  </body>
+</html>
