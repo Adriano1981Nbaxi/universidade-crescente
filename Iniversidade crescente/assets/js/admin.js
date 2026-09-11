@@ -5,10 +5,10 @@ const STORAGE_KEYS = {
 };
 
 const defaultCourses = [
-  { id: 1, icon: '💻', name: 'Engenharia e Tecnologias', description: 'Programação, redes, sistemas e soluções digitais.' },
-  { id: 2, icon: '📊', name: 'Gestão e Negócios', description: 'Estratégia, administração, logística e empreendedorismo.' },
-  { id: 3, icon: '🧠', name: 'Ciências Sociais', description: 'Comunicação, relações públicas e desenvolvimento social.' },
-  { id: 4, icon: '⚖️', name: 'Direito e Instituições', description: 'Cidadania, justiça, governança e processos legais.' }
+  { id: 1, icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5h16v9H4z"/><path d="M8 18v2m8-2v2M9 7.5V5h6v2.5"/></svg>', name: 'Engenharia e Tecnologias', description: 'Programação, redes, sistemas e soluções digitais.' },
+  { id: 2, icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 18V9.5M12 18V6M19 18v-7"/><path d="M3 18h18"/></svg>', name: 'Gestão e Negócios', description: 'Estratégia, administração, logística e empreendedorismo.' },
+  { id: 3, icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5v15"/><path d="M7 8.5h10"/><path d="M7 15.5h10"/><path d="M4.5 7.5 12 4l7.5 3.5"/></svg>', name: 'Ciências Sociais', description: 'Comunicação, relações públicas e desenvolvimento social.' },
+  { id: 4, icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18V8.5L12 5l5 3.5V18"/><path d="M9.5 12h5"/><path d="M12 12v6"/></svg>', name: 'Direito e Instituições', description: 'Cidadania, justiça, governança e processos legais.' }
 ];
 
 const defaultNews = [
