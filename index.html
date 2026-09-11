@@ -2,41 +2,270 @@
 <html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=./Iniversidade%20crescente/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Universidade Crescente</title>
+    <title>Universidade Crescente | Zango 3, Icolo e Bengo</title>
     <meta
       name="description"
-      content="Universidade Crescente — educação de qualidade em Zango 3, Icolo e Bengo, Angola."
+      content="Universidade Crescente — formação superior de excelência em Zango 3, Icolo e Bengo, Angola."
     />
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #0f2c4c, #1e5a8a);
-        color: #fff;
-        display: grid;
-        place-items: center;
-        min-height: 100vh;
-      }
-      .box {
-        text-align: center;
-        padding: 2rem 2.5rem;
-        border-radius: 16px;
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      a {
-        color: #ffd36e;
-        text-decoration: none;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <div class="box">
-      <h1>Universidade Crescente</h1>
-      <p>A redirecionar para a página principal...</p>
-      <p><a href="./Iniversidade%20crescente/index.html">Clique aqui se não for redirecionado.</a></p>
-    </div>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand-wrap">
+          <img
+            class="brand-logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2F87Zwjn7TJ3NVE-rUIoHO9vhzON_D3fx4YVmrLPmUOAvu31SydHjOck&s=10"
+            alt="Logo da Universidade Crescente"
+          />
+          <div>
+            <p class="brand-name">Universidade Crescente</p>
+            <span class="brand-sub">Zango 3 • Icolo e Bengo • Angola</span>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Menu principal">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#noticias">Notícias</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="admin.html" id="admin-login-btn" class="btn btn-light">Login</a>
+          <a href="#contacto" class="btn btn-primary">Inscreve-te</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Formação de excelência para o futuro</p>
+            <h1>Transformando ideias em oportunidades.</h1>
+            <p class="lead">
+              A Universidade Crescente forma profissionais competitivos, com foco em
+              inovação, empreendedorismo e conhecimento aplicado ao contexto angolano.
+            </p>
+            <div class="cta-row">
+              <a href="#cursos" class="btn btn-primary">Conhecer cursos</a>
+              <a href="#noticias" class="btn btn-secondary">Ver notícias</a>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>+10</strong><span>anos de experiência</span></li>
+              <li><strong>+1.5k</strong><span>estudantes</span></li>
+              <li><strong>3</strong><span>períodos • manhã, tarde e noite</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Estudantes universitários diversos">
+            <div class="hero-portrait-wrap">
+              <img
+                class="hero-portrait"
+                src="https://thumbs.dreamstime.com/z/estudantes-negros-abra%C3%A7ando-e-celebrando-o-ensino-superior-conquista-no-campus-universit%C3%A1rio-sucesso-africano-mulher-africana-267049088.jpg"
+                alt="Estudantes africanos celebrando a conquista no campus universitário"
+                style="object-position: center center;"
+              />
+            </div>
+            <div class="hero-badge">
+              <strong>+1.5k</strong>
+              <span>estudantes ativos</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="section section-light">
+        <div class="container two-col">
+          <div>
+            <p class="section-kicker">Quem somos</p>
+            <h2>Uma universidade aberta ao desenvolvimento de Angola.</h2>
+            <p>
+              A Universidade Crescente nasceu para responder às necessidades de uma
+              sociedade em transformação, promovendo educação acessível, de qualidade e
+              orientada para a empregabilidade, à pesquisa e à inovação.
+            </p>
+            <p>
+              Conectamos conhecimento teórico com prática profissional, estimulando o
+              pensamento crítico, a cidadania e a capacidade de criar valor para a
+              comunidade.
+            </p>
+          </div>
+
+          <div class="feature-panel">
+            <div class="feature-item">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5 12 5l9 4.5-9 4.5L3 9.5Z"/><path d="M7 11v4c0 1.7 2.2 3 5 3s5-1.3 5-3v-4"/><path d="M21 9.5V15"/></svg>
+              </div>
+              <div>
+                <h4>Ensino de qualidade</h4>
+                <p>Currículos modernos e orientados ao mercado.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6"/><path d="M10 14 6 20"/><path d="M14 14l4 6"/><path d="M12 3v8"/><path d="M8 7h8"/><path d="M7 11h10"/></svg>
+              </div>
+              <div>
+                <h4>Inovação</h4>
+                <p>Projetos, laboratórios e soluções reais para o país.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/><path d="M17 10.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/><path d="M4 18c1.5-2.5 3.8-3.5 6-3.5s4.5 1 6 3.5"/><path d="M14 18c1.2-2 2.8-3 4.5-3"/></svg>
+              </div>
+              <div>
+                <h4>Parcerias</h4>
+                <p>Relacionamento com instituições públicas, privadas e empresariais.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contrast">
+        <div class="container">
+          <div class="section-heading center-heading">
+            <p class="section-kicker">Por que escolher a Crescente</p>
+            <h2>Uma educação com impacto real.</h2>
+          </div>
+
+          <div class="differentials-grid">
+            <article class="differential-card accent">
+              <span class="big-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18"/><path d="M4 8.5h16"/><path d="M7 6.5h10"/><path d="M7 18h10"/><path d="M5 12h14"/></svg>
+              </span>
+              <h3>Foco no mercado</h3>
+              <p>Formação orientada para a empregabilidade, inovação e desenvolvimento socioeconómico.</p>
+            </article>
+            <article class="differential-card">
+              <span class="big-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h10.5a3 3 0 0 1 3 3v8"/><path d="M4 6.5v11"/><path d="M14 9.5h6"/><path d="M18 9.5v9"/></svg>
+              </span>
+              <h3>Docentes experientes</h3>
+              <p>Profissionais com prática real e compromisso com a qualidade acadêmica.</p>
+            </article>
+            <article class="differential-card">
+              <span class="big-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 1 9.5 9.5c0 5.2-4.3 9.5-9.5 9.5S2.5 17.2 2.5 12A9.5 9.5 0 0 1 12 2.5Z"/><path d="M3 12h18"/><path d="M12 3a13 13 0 0 1 0 18"/><path d="M12 3a13 13 0 0 0 0 18"/></svg>
+              </span>
+              <h3>Visão global</h3>
+              <p>Perspetivas internacionais e projetos com impacto para o contexto angolano.</p>
+            </article>
+            <article class="differential-card">
+              <span class="big-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/><path d="M16 11.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/><path d="M4 18.5c1.5-2.5 3.7-3.8 6-3.8s4.5 1.3 6 3.8"/><path d="M14 18.5c1.1-2 2.8-3.1 4.8-3.1"/></svg>
+              </span>
+              <h3>Rede de oportunidades</h3>
+              <p>Parcerias com empresas e instituições que abrem portas ao futuro profissional.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section">
+        <div class="container">
+          <div class="section-heading center-heading">
+            <p class="section-kicker">Campus & formatura</p>
+            <h2>Uma comunidade em crescimento.</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item tall">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Sala de aula com alunos e professor" style="object-position: center center;" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Estudantes universitários em ambiente académico" style="object-position: center center;" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Computadores e tecnologia em laboratório universitário" style="object-position: center center;" />
+            </div>
+            <div class="gallery-item wide">
+              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" alt="Estudantes e professor num laboratório de química e física" style="object-position: center center;" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section admission-banner">
+        <div class="container admission-inner">
+          <div>
+            <p class="section-kicker">Matrículas abertas</p>
+            <h2>Inscreve-te já no ciclo 2026.</h2>
+          </div>
+          <a href="#contacto" class="btn btn-primary">Solicitar informação</a>
+        </div>
+      </section>
+
+      <section id="cursos" class="section section-light">
+        <div class="container">
+          <div class="section-heading center-heading">
+            <p class="section-kicker">Cursos disponíveis</p>
+            <h2>Áreas de formação para o futuro.</h2>
+          </div>
+          <div id="courses-grid" class="courses-grid"></div>
+        </div>
+      </section>
+
+      <section id="noticias" class="section section-dark">
+        <div class="container">
+          <div class="section-heading center-heading">
+            <p class="section-kicker">Notícias e atualizações</p>
+            <h2>O que está a acontecer na Crescente.</h2>
+          </div>
+          <div id="news-list" class="news-list"></div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section section-contrast">
+        <div class="container contact-grid">
+          <div>
+            <p class="section-kicker">Contacte-nos</p>
+            <h2>Estamos prontos para receber a sua candidatura.</h2>
+            <p>
+              Campus principal: Zango 3, Icolo e Bengo, Angola.<br />
+              Telefone: +244 000 000 000<br />
+              Email: info@universidadecrescente.ao
+            </p>
+          </div>
+          <div class="contact-card">
+            <h3>Solicitar informação</h3>
+            <form class="contact-form">
+              <input type="text" placeholder="Nome completo" />
+              <input type="email" placeholder="E-mail" />
+              <textarea rows="4" placeholder="Mensagem"></textarea>
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img
+            class="brand-logo footer-logo-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2F87Zwjn7TJ3NVE-rUIoHO9vhzON_D3fx4YVmrLPmUOAvu31SydHjOck&s=10"
+            alt="Logo da Universidade Crescente"
+          />
+          <p class="brand-name footer-logo">Universidade Crescente</p>
+        </div>
+        <p>© 2026 Universidade Crescente • Zango 3, Icolo e Bengo, Angola</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
