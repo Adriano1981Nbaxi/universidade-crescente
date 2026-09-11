@@ -155,28 +155,32 @@ button, input, textarea, select {
   display: flex;
   align-items: center;
   overflow: hidden;
+  background: rgba(219, 229, 238, 0.85);
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('../image/imagcres.webp') center/cover no-repeat;
-  opacity: 1;
-  filter: saturate(1.2) contrast(1.1) brightness(1.12);
+  background:
+    linear-gradient(90deg, rgba(9, 34, 58, 0.18), rgba(9, 34, 58, 0.08)),
+    url('../image/imagcres.webp') center/cover no-repeat;
+  opacity: 0.7;
+  filter: saturate(1.08) contrast(1.04) brightness(1.12);
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(8, 39, 68, 0.20), rgba(8, 39, 68, 0.10));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.02));
+  opacity: 0.9;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(8, 39, 68, 0.06), rgba(8, 39, 68, 0.02));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.02));
   pointer-events: none;
   z-index: 1;
 }
