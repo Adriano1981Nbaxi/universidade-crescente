@@ -16,6 +16,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -24,6 +26,7 @@ body {
   background: var(--white);
   color: var(--text);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 img {
