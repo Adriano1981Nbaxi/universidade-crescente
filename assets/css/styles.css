@@ -51,7 +51,7 @@ button, input, textarea, select {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(8, 39, 68, 0.7);
+  background: rgba(18, 45, 62, 0.9);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
 }
@@ -158,32 +158,28 @@ button, input, textarea, select {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: rgba(219, 229, 238, 0.85);
+  background: linear-gradient(90deg, #0a3d5e 0%, #0d4f72 38%, #0a3f69 100%);
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(90deg, rgba(9, 34, 58, 0.18), rgba(9, 34, 58, 0.08)),
-    url('../image/imagcres.webp') center/cover no-repeat;
-  opacity: 0.7;
-  filter: saturate(1.08) contrast(1.04) brightness(1.12);
+  background: linear-gradient(90deg, rgba(7, 28, 42, 0.18), rgba(7, 28, 42, 0.08));
+  opacity: 1;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.02));
-  opacity: 0.9;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.00));
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.00), rgba(255, 255, 255, 0.00));
   pointer-events: none;
   z-index: 1;
 }
@@ -192,14 +188,15 @@ button, input, textarea, select {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
-  gap: 48px;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 46px;
   align-items: center;
-  padding: 80px 0;
+  padding: 70px 0;
 }
 
 .hero-copy {
   color: var(--white);
+  max-width: 680px;
 }
 
 .eyebrow,
@@ -214,9 +211,11 @@ button, input, textarea, select {
 
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(2.6rem, 5vw, 5rem);
-  line-height: 1.05;
+  font-size: clamp(4rem, 5vw, 7rem);
+  line-height: 0.92;
   letter-spacing: -0.06em;
+  font-weight: 900;
+  max-width: 680px;
 }
 
 .lead {
@@ -224,6 +223,7 @@ button, input, textarea, select {
   max-width: 620px;
   color: rgba(255, 255, 255, 0.86);
   font-size: 1.08rem;
+  line-height: 1.5;
 }
 
 .cta-row {
@@ -259,19 +259,21 @@ button, input, textarea, select {
 
 .hero-visual {
   position: relative;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 420px;
+  width: 100%;
 }
 
 .hero-portrait-wrap {
-  width: min(430px, 78vw);
+  width: min(480px, 75vw);
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
-  border: 12px solid rgba(255, 255, 255, 0.16);
-  box-shadow: 0 30px 70px rgba(5, 22, 41, 0.5);
+  border: 12px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 28px 70px rgba(2, 19, 33, 0.4);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .hero-portrait {
@@ -285,16 +287,16 @@ button, input, textarea, select {
 .hero-badge {
   position: absolute;
   right: 18px;
-  bottom: 28px;
+  bottom: 24px;
   display: flex;
   flex-direction: column;
   gap: 4px;
   padding: 18px 20px;
   border-radius: 20px;
-  background: rgba(6, 28, 50, 0.8);
+  background: rgba(13, 56, 79, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
-  box-shadow: 0 16px 30px rgba(9, 18, 35, 0.24);
+  box-shadow: 0 16px 30px rgba(9, 18, 35, 0.18);
   color: var(--white);
 }
 
