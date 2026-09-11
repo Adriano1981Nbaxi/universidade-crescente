@@ -154,18 +154,20 @@ button, input, textarea, select {
 
 .hero {
   position: relative;
-  min-height: 660px;
+  min-height: 720px;
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: linear-gradient(90deg, #0a3d5e 0%, #0d4f72 38%, #0a3f69 100%);
+  background:
+    linear-gradient(90deg, rgba(8, 33, 48, 0.54), rgba(8, 33, 48, 0.20)),
+    url('../image/imagcres.webp') center center / cover no-repeat;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(7, 28, 42, 0.18), rgba(7, 28, 42, 0.08));
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(0,0,0,0.12));
   opacity: 1;
 }
 
@@ -173,7 +175,7 @@ button, input, textarea, select {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.00));
+  background: linear-gradient(90deg, rgba(10, 32, 48, 0.18), rgba(10, 32, 48, 0.04));
 }
 
 .hero-overlay {
@@ -188,7 +190,7 @@ button, input, textarea, select {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-columns: 1.2fr 0.8fr;
   gap: 46px;
   align-items: center;
   padding: 70px 0;
@@ -196,7 +198,8 @@ button, input, textarea, select {
 
 .hero-copy {
   color: var(--white);
-  max-width: 680px;
+  max-width: 700px;
+  padding-top: 24px;
 }
 
 .eyebrow,
@@ -211,19 +214,21 @@ button, input, textarea, select {
 
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(4rem, 5vw, 7rem);
+  font-size: clamp(3.2rem, 5vw, 6.2rem);
   line-height: 0.92;
   letter-spacing: -0.06em;
   font-weight: 900;
   max-width: 680px;
+  text-shadow: 0 10px 24px rgba(0,0,0,0.18);
 }
 
 .lead {
-  margin: 20px 0 0;
+  margin: 24px 0 0;
   max-width: 620px;
-  color: rgba(255, 255, 255, 0.86);
-  font-size: 1.08rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.12rem;
   line-height: 1.5;
+  text-shadow: 0 8px 18px rgba(0,0,0,0.2);
 }
 
 .cta-row {
@@ -259,7 +264,7 @@ button, input, textarea, select {
 
 .hero-visual {
   position: relative;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   min-height: 420px;
